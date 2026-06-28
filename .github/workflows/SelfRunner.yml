@@ -1,6 +1,10 @@
 permissions:
   id-token: write
   contents: read
+on:
+  push:
+  branches: [ main ]
+  workflow_dispatch:   # ✅ Manual trigger only
 
 steps:
   - name: Checkout code
